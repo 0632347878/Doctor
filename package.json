@@ -1,0 +1,29 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Project with Gulp",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0632347878/Ivanov.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0632347878/Ivanov/issues"
+  },
+  "homepage": "https://github.com/0632347878/Ivanov#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}
