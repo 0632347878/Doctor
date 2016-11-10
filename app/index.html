@@ -83,7 +83,7 @@
 							<span class="button b-close"><span>X</span></span>
 						</div>
 						<!--end popup duplicate form-->
-						<span class="batton_separator">или</span>
+						<span class="button_separator">или</span>
 						<button class="button_right col_45" href="#">Задать вопрос врачу</button>
 						<!--popup duplicate form-->
 						<div class="form-wrapper form-wrapper-ask">
@@ -260,8 +260,8 @@
 				    <!-- Additional required wrapper -->
 				    <div class="swiper-wrapper">
 				        <!-- Slides -->
-				        <div class="swiper-slide row test">
-				        				        	<div class="item item3">
+				        <div class="swiper-slide row">
+				        	<div class="item item3">
 					        	<a class="items-img3" href="#">
 					        		<img src="img/item3.png" alt="ava">
 					        	</a>
@@ -274,7 +274,7 @@
 					        	</div>
 				        	</div>
 				        </div>
-				        <div class="swiper-slide row test">
+				        <div class="swiper-slide row">
 				        	<div class="item item1">
 					        	<a class="items-img1" href="#">
 					        		<img src="img/item1.png" alt="ava">
@@ -288,7 +288,7 @@
 					        	</div>
 				        	</div>
 				        </div>
-				        <div class="swiper-slide row test">
+				        <div class="swiper-slide row">
 				        	<div class="item item2">
 					        	<a class="items-img2" href="#">
 					        		<img src="img/item2.png" alt="ava">
@@ -301,48 +301,7 @@
 					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eos facilis earum enim, doloribus officia veritatis cumque totam ipsa ad numquam temporibus veniam suscipit. Expedita, sequi, dolores. Dolores, rem, qui!</p>
 					        	</div>
 				        	</div>
-	
 				        </div>
-	
-				        <!-- <div class="swiper-slide row">
-				        	<div class="col_3 item item3">
-					        	<a class="items-img3" href="#">
-					        		<img src="img/item3.png" alt="ava">
-					        	</a>
-					        	<span>Александр Сергеевич</span>
-					        	<p>хирург-стоматолог</p>
-					        	<p>стаж 8 лет</p>
-					        	<div class="more more3">
-					        		<span class="button b-close"><span>X</span></span>
-					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae expedita odit illum perferendis, dicta minima a et, temporibus modi non culpa enim eius veniam cumque voluptatibus accusantium, delectus cupiditate. Vitae?</p>
-					        	</div>
-				        	</div>
-				        	<div class="col_3 item item1">
-					        	<a class="items-img1" href="#">
-					        		<img src="img/item1.png" alt="ava">
-					        	</a>
-					        	<span>Ванесса Сергеевна</span>
-					        	<p>хирург-стоматолог</p>
-					        	<p>стаж 10 лет</p>
-					        	<div class="more more1">
-					        		<span class="button b-close"><span>X</span></span>
-					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nemo praesentium ab, modi nostrum sit incidunt facilis? Voluptates iure vel similique officiis minus reiciendis itaque necessitatibus, sit dolore nihil odit?</p>
-					        	</div>
-				        	</div>
-				        	<div class="col_3 item item2">
-					        	<a class="items-img2" href="#">
-					        		<img src="img/item2.png" alt="ava">
-					        	</a>
-					        	<span>Виктор Павлович</span>
-					        	<p>хирург-стоматолог</p>
-					        	<p>стаж 5 лет</p>
-					        	<div class="more more2">
-					        		<span class="button b-close"><span>X</span></span>
-					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eos facilis earum enim, doloribus officia veritatis cumque totam ipsa ad numquam temporibus veniam suscipit. Expedita, sequi, dolores. Dolores, rem, qui!</p>
-					        	</div>
-				        	</div>
-				        </div> -->
-				        <!--end Slides -->
 				    </div>
 				    <!-- If we need navigation buttons -->
 				    <div class="swiper-button-next"></div>
@@ -392,11 +351,24 @@
 		$(function() {
 		$('#menu').slicknav();
 	});
+	// --------- Slider	
 	var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
+    breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  },
     
     // Navigation arrows
     nextButton: '.swiper-button-next',

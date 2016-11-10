@@ -175,7 +175,7 @@ body {
   color: #fff;
   padding-top: 40px;
 }
-.buttons-wrapper .batton_separator {
+.buttons-wrapper .button_separator {
   float: left;
   padding: 0 1%;
   min-height: 60px;
@@ -830,6 +830,7 @@ body {
   .swiper-slide .item {
     min-height: 260px;
     width: 100%;
+    margin: 0;
   }
   .swiper-slide .item > :first-child > :first-child {
     max-width: 180px;
@@ -883,6 +884,16 @@ body {
   .buttons-wrapper {
     font-size: 2.5vw;
     padding-top: 10px;
+  }
+  .buttons-wrapper .button_left,
+  .buttons-wrapper .button_right {
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .buttons-wrapper .button_separator {
+    min-height: 33px;
+    line-height: 33px;
   }
   .readAboutUs {
     padding-bottom: 30px;
