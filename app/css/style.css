@@ -138,7 +138,8 @@ body {
 }
 .section_first_holder {
   background-image: url(../img/bg-first.jpg);
-  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   margin-top: -51px;
 }
 .content-wrapper {
@@ -192,6 +193,8 @@ body {
   padding-bottom: 14px;
   line-height: 27px;
   float: left;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   padding-right: 0;
   padding-left: 0;
@@ -200,6 +203,8 @@ body {
 .buttons-wrapper .button_right:hover {
   background-color: #46b6e3;
   border-color: transparent;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 .buttons-wrapper .left {
@@ -271,7 +276,8 @@ body {
 .form-wrapper-ask {
   background-color: #ebebeb;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 25px 5px #999;
+  -webkit-box-shadow: 0 0 25px 5px #999;
+          box-shadow: 0 0 25px 5px #999;
   padding: 25px;
 }
 .form-wrapper-meet .button,
@@ -295,7 +301,8 @@ body {
 }
 .b-close {
   border-radius: 7px 7px 7px 7px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   font: bold 131% sans-serif;
   padding: 0 6px 2px;
   position: absolute;
@@ -313,8 +320,6 @@ body {
   padding: 14px 0 10px 23px;
   outline: none;
   font-family: 'latomedium';
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 .consultation-form > :first-child {
@@ -332,10 +337,14 @@ body {
   border: 2px solid #fff;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 .consultation-form > :last-child:hover {
   background-color: #46b6e3;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
   border: 2px solid transparent;
 }
@@ -414,6 +423,8 @@ body {
   padding-right: 20px;
   text-align: left;
   display: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
   max-height: 300px;
@@ -501,7 +512,8 @@ body {
 }
 .section_fourth_holder {
   background: url(../img/equipment.jpg) no-repeat;
-  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
 }
 .fourth {
   width: 100%;
@@ -532,10 +544,14 @@ body {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 .readAboutUs > :nth-child(3):hover {
   background-color: #46b6e3;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   border-color: transparent;
 }
@@ -602,12 +618,16 @@ body {
 .more {
   background-color: #ebebeb;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 25px 5px #999;
+  -webkit-box-shadow: 0 0 25px 5px #999;
+          box-shadow: 0 0 25px 5px #999;
   padding: 25px;
   display: none;
   margin: 0 auto;
   width: 60%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
   left: 50% !important;
 }
 .enable-320 {
@@ -629,7 +649,10 @@ body {
   position: absolute;
   margin-top: 73px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 5;
 }
 .six .map {
@@ -880,7 +903,8 @@ body {
   }
   .first {
     background-position: top;
-    background-size: auto;
+    -webkit-background-size: auto auto;
+            background-size: auto;
     padding-top: 0;
   }
   .section_first_holder {
@@ -1007,6 +1031,7 @@ body {
     display: none;
   }
   .slicknav_btn {
+    margin: -webkit-calc(13.562px) 0 -webkit-calc(12.562px) 0;
     margin: calc(13.562px) 0 calc(12.562px) 0;
   }
   .advantages {
@@ -1035,7 +1060,8 @@ body {
     width: 100%;
   }
   .section_first_holder {
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-position: center top;
     min-height: 460px;
   }

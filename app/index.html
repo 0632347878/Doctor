@@ -313,7 +313,7 @@
 			<div class="section_sixth_holder">
 				<section id="ex3" class="section six">
 					<h2>Как к нам добраться</h2>
-					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10262.158817856836!2d36.18186853465577!3d49.98249015000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1478291238818" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe id="map" class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10262.158817856836!2d36.18186853465577!3d49.98249015000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1478291238818" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</section>
 			</div>	
 			<!-- end section six -->
@@ -374,9 +374,11 @@
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev'
   })    
-
-
-
+	function initMap() {
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    disableDefaultUI: true
+	  });
+	}
 
 	</script>
 </body>

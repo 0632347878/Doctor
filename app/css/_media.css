@@ -132,7 +132,8 @@
   }
   .first {
     background-position: top;
-    background-size: auto;
+    -webkit-background-size: auto auto;
+            background-size: auto;
     padding-top: 0;
   }
   .section_first_holder {
@@ -259,6 +260,7 @@
     display: none;
   }
   .slicknav_btn {
+    margin: -webkit-calc(13.562px) 0 -webkit-calc(12.562px) 0;
     margin: calc(13.562px) 0 calc(12.562px) 0;
   }
   .advantages {
@@ -287,7 +289,8 @@
     width: 100%;
   }
   .section_first_holder {
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-position: center top;
     min-height: 460px;
   }

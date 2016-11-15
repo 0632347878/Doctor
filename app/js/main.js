@@ -225,3 +225,13 @@ function stickIt() {
     $('.original').css('visibility','visible');
   }
 }
+
+function initMap() {
+  var mapOptions = {
+    zoom: 4,
+    center: {lat: -33, lng: 151},
+    disableDefaultUI: true
+  }
+  var map = (document.querySelector(".map"),
+       mapOptions);
+}
