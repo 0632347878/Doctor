@@ -1,9 +1,10 @@
-var gulp 			= require('gulp'),
-	less 		  	= require('gulp-less'),
-	browserSync     = require('browser-sync');
-	concat          = require('gulp-concat');
-  	uglify          = require('gulp-uglifyjs');
-    autoprefixer    = require('gulp-autoprefixer');
+var gulp 			   = require('gulp');
+	  less 		  	 = require('gulp-less');
+	  browserSync  = require('browser-sync');
+	  concat       = require('gulp-concat');
+  	uglify       = require('gulp-uglifyjs');
+    autoprefixer = require('gulp-autoprefixer');
+    
 
 gulp.task('less',function() {
 	return gulp.src('app/less/*.less')
